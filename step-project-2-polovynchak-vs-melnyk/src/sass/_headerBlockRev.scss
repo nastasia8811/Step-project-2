@@ -1,0 +1,97 @@
+@import "variables";
+.container-editor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 138px;
+  margin-bottom: 88px;
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-left: 23px;
+  min-width: 320px;
+  text-align: center;
+  @media (min-width: 320px) and (max-width: 480px) {
+    max-width: 480px;
+  }
+  @media (min-width: 481px) and (max-width: 992px) {
+    max-width: 992px;
+    margin-top: 182px;
+    margin-bottom: 98px;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 39px;
+  }
+  @media (min-width: 993px) {
+    max-width: 1200px;
+    margin: 160px auto 70px;
+    padding: 0 135px;
+  }
+  &--title{
+    font-weight: 700;
+    color: $middleVioletColor;
+    text-transform: uppercase;
+    @media (max-width: 480px) {
+      font-size: 26px;
+      line-height: 28px;
+      margin-bottom: 27px;
+    }
+    @media (min-width: 481px) and (max-width: 992px) {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 33px;
+    }
+    @media (min-width: 993px) {
+      font-size: 54px;
+      line-height: 54px;
+      margin-bottom: 35px;
+    }
+  }
+  &--description {
+    padding-bottom: 36px;
+    color: $middleGreyColor;
+    font-weight: 400;
+    @media (max-width: 480px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @media (min-width: 481px) and (max-width: 992px) {
+      padding-bottom: 24px;
+      font-size: 21px;
+      line-height: 32px;
+    }
+    @media (min-width: 993px) {
+      padding-bottom: 13px;
+      font-size: 21px;
+      line-height: 32px;
+    }
+  }
+  &__buttons--1 {
+    min-width: 100%;
+    padding-bottom: 20px;
+    @media (max-width: 480px) {
+    }
+    @media (min-width: 481px) and (max-width: 992px) {
+      display: none;
+    }
+    @media (min-width: 993px) {
+      display: none;
+    }
+  }
+  &__buttons--2 {
+    min-width: 100%;
+    @media (max-width: 480px) {
+    }
+    @media (min-width: 481px) and (max-width: 992px) {
+      display: none;
+    }
+    @media (min-width: 993px) {
+      display: none;
+    }
+  }
+  &__buttons--3 {
+    display: block;
+    min-width: 100%;
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
